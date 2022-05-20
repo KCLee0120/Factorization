@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>恆等式及因式分解練習</title>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.5/jspdf.debug.js"></script>
+  <script
+      src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script type="text/javascript" async
+    src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML">
+  </script>
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+	</script>
+  	<script src="GetLv1CommonFactor.js"></script>
+		<script src="GetLv2CommonFactor.js"></script>
+		<script src="GetLv3CommonFactor.js"></script>
+		<script src="GetLv1Identity.js"></script>
+		<script src="GetLv2Identity.js"></script>
+		<script src="GetLv3Identity.js"></script>
+		<script src="GetLv1CrossProduct.js"></script>
+		<script src="GetLv2CrossProduct.js"></script>
+		<script src="GetLv3CrossProduct.js"></script>
+		<script src="interfaceControl.js"></script>
+		<script src="GetLv1IdentityExpand.js"></script>
+		<script src="GetLv2IdentityExpand.js"></script>
+		<script src="GetLv3IdentityExpand.js"></script>
+
+</head>
+
+<body>
+
+	<p style="font-size:20px;"><strong>恆等式及因式分解</strong></p>
+
+	<select id="levelSelect" onchange="showQuestion()">
+		<option value="0">選取程度</option>
+		<option value="1">提取公因式 (程度一)</option>
+		<option value="2">提取公因式 (程度二)</option>
+		<option value="3">提取公因式 (程度三)</option>
+		<!-- <option value="4">Identities - Level 1</option>
+		<option value="5">Identities - Level 2</option>
+		<option value="6">Identities - Level 3</option> -->
+		<option value="7">十字相乘法 (程度一)</option>
+		<option value="8">十字相乘法 (程度二)</option>
+		<option value="9">十字相乘法 (程度三)</option> -->
+		<option value="10">恆等式展開 (程度一)</option>
+		<option value="11">恆等式展開 (程度二)</option>
+		<option value="12">恆等式展開 (程度三)</option>
+
+
+	</select>
+
+	<div id="questions"></div>
+
+	<br><button onclick="showAnswers()">顯示答案</button>
+	<button onclick="showQuestion()">重設</button>
+
+	<div id="answers" ></div>
+
+</body>
+</html>
